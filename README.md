@@ -1,5 +1,5 @@
 # Helserefusjon - åpne data
-API med åpne data fra Helserefusjonsområdet. 
+REST API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON format.  
 
 Lisens for åpne data https://data.norge.no/nlod/no/
 
