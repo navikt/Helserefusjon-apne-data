@@ -1,7 +1,7 @@
 # Helserefusjon - åpne data
 REST API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON format.  
 
-Lisens for åpne data https://data.norge.no/nlod/no/
+Lisens for offentlige data https://data.norge.no/nlod/no/
 
 ## Bandasjister og direkte oppgjørsavtaler
 URL https://tjenester.nav.no/helserefusjon/rest/bandasjister
