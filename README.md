@@ -3,8 +3,10 @@ REST API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON 
 
 Lisens for offentlige data https://data.norge.no/nlod/no/
 
-## Bandasjister og direkte oppgjørsavtaler
+## Bandasjister med direkte oppgjørsavtale
 URL https://tjenester.nav.no/helserefusjon/rest/bandasjister
+
+Henter ut siste gjeldende oversikt over bandasjister som er registrert med direkte oppgjørsavtale hos Helfo.
 
 ### Data innhold
 Felt | Beskrivelse
