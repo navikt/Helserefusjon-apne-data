@@ -6,7 +6,7 @@ Lisens for offentlige data https://data.norge.no/nlod/no/
 ## Bandasjister med direkte oppgjørsavtale
 URL https://tjenester.nav.no/helserefusjon/rest/bandasjister
 
-Henter ut siste gjeldende oversikt over bandasjister som er registrert med direkte oppgjørsavtale hos Helfos Samhandlerregister (SAR).
+Henter ut siste gjeldende oversikt over bandasjister som er registrert med direkte oppgjørsavtale i Helfos Samhandlerregister (SAR).
 
 ### Data innhold
 Felt | Beskrivelse
