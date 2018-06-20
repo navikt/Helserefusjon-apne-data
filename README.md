@@ -1,6 +1,12 @@
 # Helserefusjon - åpne data
 REST API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON og XML format.  
 
+Det tilbys API for følgende områder:
+- Bandasjister med direkte oppgjørsavtale
+- Takstkoder
+- Labratoriekodeverk (NLK-koder)
+- NLK refusjonskategorier
+
 Lisens for offentlige data https://data.norge.no/nlod/no
 
 Se også https://ehelse.no/takster
