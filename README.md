@@ -1,5 +1,5 @@
 # Helserefusjon - åpne data
-REST API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON og XML format.  
+HTTP API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON og XML format.  
 
 Det tilbys API for følgende områder:
 - Bandasjister med direkte oppgjørsavtale
