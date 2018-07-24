@@ -12,7 +12,7 @@ Lisens for offentlige data https://data.norge.no/nlod/no
 Se også https://ehelse.no/takster
 
 ## Bandasjister med direkte oppgjørsavtale
-URL https://helserefusjoner-kuhr.nav.no/rest/opne-data/v1/bandasjister
+URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/bandasjister
 
 Henter ut siste gjeldende oversikt over bandasjister som er registrert med direkte oppgjørsavtale i Helfos Samhandlerregister (SAR).
 
@@ -36,7 +36,7 @@ Parameter | Beskrivelse
 HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
 
 ## Takstkoder
-URL https://helserefusjoner-kuhr.nav.no/rest/opne-data/v1/takstkoder
+URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstkoder
 
 ### Datainnhold
 Felt | Beskrivelse
@@ -76,7 +76,7 @@ Query: takstkode | Filtrer takstene til en gitt kode, kan kombineres med de andr
 
 
 ## Labratoriekodeverk (NLK-koder)
-URL https://helserefusjoner-kuhr.nav.no/rest/opne-data/v1/nlkkoder
+URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/nlkkoder
 
 ### Datainnhold
 Felt | Beskrivelse
@@ -114,7 +114,7 @@ Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
 
 
 ## NLK refusjonskategorier
-URL https://helserefusjoner-kuhr.nav.no/rest/opne-data/v1/refusjonskategorisatser
+URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/refusjonskategorisatser
 
 ### Datainnhold
 Felt | Beskrivelse
