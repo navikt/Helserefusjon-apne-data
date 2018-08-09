@@ -74,6 +74,9 @@ Query: fagomraade | AP - Audiopedagog, BE - Behandlingsreiser i utlandet, FBV - 
 Query: gyldigdato | Filtrerer takstene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
 Query: takstkode | Filtrer takstene til en gitt kode, kan kombineres med de andre parametrene eller brukes alene.
 
+#### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstkoder?gyldigdato=2018-08-09&takstkode=2ad
+
 
 ## Labratoriekodeverk (NLK-koder)
 URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/nlkkoder
@@ -112,6 +115,8 @@ Query: gyldigdato | Filtrerer kodene til kun de som er gyldig på en gitt dato. 
 Query: nlkkode | Filtrer til en gitt kode
 Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
 
+#### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/nlkkoder?gyldigdato=2018-08-09&samhandlertype=PO
 
 ## NLK refusjonskategorier
 URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/refusjonskategorisatser
@@ -132,6 +137,9 @@ Parameter | Beskrivelse
 HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
 Query: gyldigdato | Filtrerer kodene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
 Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
+
+#### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/refusjonskategorisatser?gyldigdato=2018-08-09&samhandlertype=PO
 
 
 
