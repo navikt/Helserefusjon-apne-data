@@ -73,6 +73,9 @@ HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter applic
 Query: fagomraade | AP - Audiopedagog, BE - Behandlingsreiser i utlandet, FBV - Fritt behandlingsvalg, FY - Fysioterapi, HS - Helsestasjon, JO - Jordmor, KI - Kiropraktor, LE - Lege, LOGO - Logoped, LR - Privat lab/radiologi, OR - Ortoptist, PO - Poliklinikk, PS - Psykolog, PT - Primærhelseteam, RE - Rehabiliteringsinstitusjon, TH - Tannhelse, TP - Tannpleier
 Query: gyldigdato | Filtrerer takstene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
 Query: takstkode | Filtrer takstene til en gitt kode, kan kombineres med de andre parametrene eller brukes alene.
+Query: beskrivelse | Filtrer på beskrivelsen til takstkoden, kan kombineres med de andre parametrene eller brukes alene.
+
+For query på takstkode og beskrivelse kan %25 brukes for å angi wildcard søk. Feks. %25undersøkelse%25 for å søke på alt som inneholder undersøkelse.
 
 #### Eksempel:
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstkoder?gyldigdato=2018-08-09&takstkode=2ad
@@ -114,6 +117,8 @@ HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter applic
 Query: gyldigdato | Filtrerer kodene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
 Query: nlkkode | Filtrer til en gitt kode
 Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
+
+For query på nlkkode %25 brukes for å angi wildcard søk.
 
 #### Eksempel:
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/nlkkoder?gyldigdato=2018-08-09&samhandlertype=PO
