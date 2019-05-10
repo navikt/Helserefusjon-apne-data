@@ -13,7 +13,6 @@ Lisens for offentlige data https://data.norge.no/nlod/no
 
 Se også https://ehelse.no/takster
 
-
 ## Aggregert takstbruk
 APIet tilbyr takstbruk statistikk for kommuner og fylker, fordelt på år, måned, fagområder og praksistyper. Den geografiske inndeling
 er basert på behandlers adresse. For kommuner/år er tallene begrenset til å bare ta med takster der antallet er større enn 5. For kommune/måned tallene
@@ -258,6 +257,101 @@ Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
 
 #### Eksempel:
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/refusjonskategorisatser?gyldigdato=2018-08-09&samhandlertype=PO
+
+## Kodeverk
+
+Fylkesnummer: https://data.norge.no/data/statens-kartverk/fylkesnummer
+
+Kommunenr: https://data.norge.no/data/kartverket/kommunenummer
+
+**Fagområder**
+
+Kode | Beskrivelse
+-----|------------
+AP	|	Audiopedagog
+APO	|	Apotek
+BE	|	Behandlingsreiser i utlandet
+BI	|	Bidragsreiser
+FBV	|	Fritt behandlingsvalg
+FY	|	Fysioterapi
+HS	|	Helsestasjon
+JO	|	Jordmor
+KI	|	Kiropraktor
+KU	|	Kurssentra
+LE	|	Lege
+LOGO	|	Logoped
+LR	|	Privat lab/radiologi
+MU	|	Multidose
+OP	|	Optiker
+OR	|	Ortoptist
+PO	|	Poliklinikk
+PR	|	Pasientreiser
+PS	|	Psykolog
+PT	|	Primærhelseteam
+RE	|	Rehabiliteringsinstitusjon
+TH	|	Tannhelse
+TP	|	Tannpleier
+
+**Praksistyper**
+
+Kode | Beskrivelse| Fagområde kode
+-----|------------|----------------
+AUDI	|	Audiopedagog	|	AP
+BEUT	|	Behandlingsreiser i utlandet	|	BE
+BIRE	|	Bidragsreiser	|	BI
+FRBE	|	Fritt behandlingsvalg	|	FBV
+FAFY	|	Fastlønnstilskudd fysioterapi	|	FY
+FYKO	|	Fysioterapeut kommunal	|	FY
+FYMT	|	Manuellterapeut	|	FY
+FYNO	|	Fysioterapeut	|	FY
+FYPM	|	Psykomotoriker	|	FY
+FYRT	|	Fysioterapeut rideterapi	|	FY
+FYUM	|	Utdanningskandidat manuellterapi	|	FY
+FYUP	|	Utdanningskandidat psykomotorikk	|	FY
+FYUV	|	Utdanningskandidat fysio annet	|	FY
+HELS	|	Helsestasjon	|	HS
+JORD	|	Jordmor	|	JO
+KINO	|	Kiropraktor	|	KI
+KURS	|	Kurssentra	|	KU
+FALE	|	Fastlege	|	LE
+FALO	|	Fastlønnet	|	LE
+FATU	|	LIS1-Lege	|	LE
+LEKO	|	Legevakt kommunal	|	LE
+LEVA	|	Legevakt	|	LE
+SPAN	|	Spesialist anestesiologi	|	LE
+SPBA	|	Spesialist barnesykdommer	|	LE
+SPES	|	Spesialist	|	LE
+SPFY	|	Spesialist fysikalsk medisin og rehabilitering	|	LE
+SPGY	|	Spesialist gynekologi	|	LE
+SPHU	|	Spesialist hudlege	|	LE
+SPIN	|	Spesialist indremedisin	|	LE
+SPKI	|	Spesialist kirurgi	|	LE
+SPNE	|	Spesialist nevrologi	|	LE
+SPOK	|	Spesialist onkologi	|	LE
+SPOL	|	Spesialist øyelege	|	LE
+SPON	|	Spesialist øre-nese-hals	|	LE
+SPPS	|	Spesialist psykiatri	|	LE
+SPRA	|	Spesialist radiologi	|	LE
+SPRE	|	Spesialist revmatologi	|	LE
+SYPL	|	Sykepleier	|	LE
+URRE	|	H1-lege	|	LE
+UTKA	|	Utdanningskandidat	|	LE
+LOGO	|	Logoped	|	LOGO
+LARO	|	Privat laboratorium og radiologi	|	LR
+MULT	|	Multidose	|	MU
+ORTO	|	Ortoptist	|	OR
+SYKE	|	Poliklinikk	|	PO
+PASI	|	Pasientreiser	|	PR
+PSNE	|	Nevropsykolog	|	PS
+PSNO	|	Psykolog	|	PS
+PSUT	|	Utdanningskandidat psykoterapi	|	PS
+OPPT	|	Rehabiliteringsinstitusjon	|	RE
+TAFK	|	Fylkeskommunal kjeveortoped	|	TH
+TAFY	|	Fylkeskommunal tannlege	|	TH
+TAKJ	|	Tannlege kjeveortoped	|	TH
+TANN	|	Tannlege	|	TH
+TAPL	|	Tannpleier	|	TP
+TAPO	|	Tannpleier offentlig	|	TP
 
 
 
