@@ -2,14 +2,127 @@
 HTTP API med åpne data fra Helserefusjonsområdet. APIet leverer data på JSON og XML format.  
 
 Det tilbys API for følgende områder:
+- Aggregert takstbruk
 - Bandasjister med direkte oppgjørsavtale
 - Takstkoder
 - Labratoriekodeverk (NLK-koder)
 - NLK refusjonskategorier
 
+
 Lisens for offentlige data https://data.norge.no/nlod/no
 
 Se også https://ehelse.no/takster
+
+
+## Aggregert takstbruk
+APIet tilbyr takstbruk statistikk for kommuner og fylker, fordelt på år, måned, fagområder og praksistyper. Den geografiske inndeling
+er basert på behandlers adresse. For kommuner/år er tallene begrenset til å bare ta med takster der antallet er større enn 5. For kommune/måned tallene
+er det begrenset til kommuner over 10 000 innbyggere. 
+
+### Datainnhold
+Felt | Beskrivelse
+-----|------------
+ar |
+maned |
+takstkode |
+fagomraade |
+praksis_type_kode |
+behandler_kommunenr |
+behandler_fylke |
+antall_regninger |
+sum_refusjon |
+sum_egenandel_betalt_av_pasient |
+sum_egenandel_dekket_av_folketrygden |
+
+### API
+
+#### Kommune / Måned
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: tommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: kommuner | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/kommune/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
+
+#### Kommune / År
+
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fomar | Obligatorisk
+Query: tomar | Obligatorisk
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: kommuner | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/kommune/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
+
+#### Fylke / Måned
+
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: tommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: fylker | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/fylke/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
+
+#### Fylke / År
+
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fomar | Obligatorisk
+Query: tomar | Obligatorisk
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: fylker | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/fylke/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
+
+#### Hele landet / måned
+
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: tommaned | Obligatorisk, lengden på perioden kan ikke være mer enn 13 måneder
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/landet/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&praksistyper=FALE,LEVA
+
+#### Hele landet / år
+
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: fagomraade | Obligatorisk, komma separerte verdier. Se kodeverk for mulig verdier
+Query: fomar | Obligatorisk
+Query: tomar | Obligatorisk
+Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
+Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
+
+##### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/landet/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H11&praksistyper=FALE,LEVA
+
 
 ## Bandasjister med direkte oppgjørsavtale
 URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/bandasjister
