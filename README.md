@@ -18,6 +18,8 @@ APIet tilbyr takstbruk statistikk for kommuner og fylker, fordelt på år, måne
 er basert på behandlers adresse. For kommuner/år er tallene begrenset til å bare ta med takster der antallet er større enn 5. For kommune/måned tallene
 er det begrenset til kommuner over 10 000 innbyggere. 
 
+Hvert API kan enten hente ut data som JSON eller XML eller som CSV. Det er forskjellige URLer avhengig av om det er JSON / XML eller CSV.
+
 ### Datainnhold
 Felt | Beskrivelse
 -----|------------
@@ -29,6 +31,7 @@ praksis_type_kode |
 behandler_kommunenr |
 behandler_fylke |
 antall_regninger |
+sum_antall_takst |
 sum_refusjon |
 sum_egenandel_betalt_av_pasient |
 sum_egenandel_dekket_av_folketrygden |
@@ -47,7 +50,13 @@ Query: kommuner | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/kommune/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
+
+CSV:
+
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/eksport/agtakst/kommune/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
 
 #### Kommune / År
 
@@ -62,7 +71,13 @@ Query: kommuner | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/kommune/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
+
+CSV:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/eksport/agtakst/kommune/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&kommuner=0301&praksistyper=FALE,LEVA
+
 
 #### Fylke / Måned
 
@@ -77,7 +92,12 @@ Query: fylker | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/fylke/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
+
+CSV:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/eksport/agtakst/fylke/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
 
 #### Fylke / År
 
@@ -92,7 +112,12 @@ Query: fylker | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/fylke/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
+
+CSV:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/eksport/agtakst/fylke/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H1&fylker=03,15&praksistyper=FALE,LEVA
 
 #### Hele landet / måned
 
@@ -106,7 +131,12 @@ Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/landet/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&praksistyper=FALE,LEVA
+
+CSV:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/eksport/agtakst/landet/maned?fagomraade=LE&fommaned=201805&tommaned=201905&takstkoder=H1&praksistyper=FALE,LEVA
 
 #### Hele landet / år
 
@@ -120,7 +150,11 @@ Query: takstkoder | Komma separerte verdier. Se kodeverk for mulig verdier
 Query: praksistyper | Komma separerte verdier. Se kodeverk for mulig verdier
 
 ##### Eksempel:
+JSON / XML:
+
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/takstbruk/agtakst/landet/ar?fagomraade=LE&fomar=2015&tomar=2019&takstkoder=H11&praksistyper=FALE,LEVA
+
+CSV:
 
 
 ## Bandasjister med direkte oppgjørsavtale
