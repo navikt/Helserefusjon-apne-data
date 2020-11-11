@@ -300,6 +300,8 @@ Kommunenr: https://data.norge.no/data/kartverket/kommunenummer
 
 **Fagområder**
 
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/fagomraader
+
 Kode | Beskrivelse
 -----|------------
 AP	|	Audiopedagog
