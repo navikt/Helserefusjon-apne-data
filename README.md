@@ -210,6 +210,8 @@ maks_antall_per_kalender_aar |
 maks_antall_gjelder_pasient |
 minimum_tidsbruk |
 beskrivelse |
+resource_id |
+tidsbruk_per_rep |
 
 
 ### Parametre
