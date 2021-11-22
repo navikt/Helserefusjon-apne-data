@@ -222,6 +222,7 @@ Query: fagomraade | AP - Audiopedagog, BE - Behandlingsreiser i utlandet, FBV - 
 Query: gyldigdato | Filtrerer takstene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
 Query: takstkode | Filtrer takstene til en gitt kode, kan kombineres med de andre parametrene eller brukes alene.
 Query: beskrivelse | Filtrer på beskrivelsen til takstkoden, kan kombineres med de andre parametrene eller brukes alene.
+Query: offisielle_ugyldige_takstkombinasjoner | Filtrer offisielle ugyldige takstkombinasjoner definert i feltet <code>ugyldig_kombinasjon</code>. Om alt filtreres så endres 'Alle unntatt' til 'Alle'. Mulige parametre: ja/nei.
 
 For query på takstkode og beskrivelse kan %25 brukes for å angi wildcard søk. Feks. %25undersøkelse%25 for å søke på alt som inneholder undersøkelse.
 
