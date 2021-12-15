@@ -7,6 +7,7 @@ Det tilbys API for følgende områder:
 - Takstkoder
 - Labratoriekodeverk (NLK-koder)
 - NLK refusjonskategorier
+- Apat kombinasjoner
 
 
 Lisens for offentlige data https://data.norge.no/nlod/no
@@ -294,6 +295,32 @@ Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
 
 #### Eksempel:
 https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/refusjonskategorisatser?gyldigdato=2018-08-09&samhandlertype=PO
+
+
+## Apat kombinasjoner
+URL https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/apatkombinasjoner
+
+### Datainnhold
+Felt | Beskrivelse
+-----|------------
+t_kode |
+p_kode |
+refusjonskategori |
+belop |
+samhandler_type |
+fradato |
+tildato |
+fradato |
+
+### Parametre
+Parameter | Beskrivelse
+-----|------------
+HTTP Header: Accept| Angir hvilket format data skal leveres på. Støtter application/xml og application/json
+Query: gyldigdato | Filtrerer kodene til kun de som er gyldig på en gitt dato. Dato på formatet  yyyy-MM-dd
+Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
+
+#### Eksempel:
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/apatkombinasjoner?gyldigdato=2018-08-09&samhandlertype=PO
 
 ## Kodeverk
 
