@@ -320,7 +320,7 @@ Query: gyldigdato | Filtrerer kodene til kun de som er gyldig på en gitt dato. 
 Query: samhandlertype | PO - Poliklinikk, LR - Privat lab/radiologi
 
 #### Eksempel:
-https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/apatkombinasjoner?gyldigdato=2021-12-15&samhandlertype=PO
+https://helserefusjoner-kuhr.nav.no/api/opne-data/v1/apatkombinasjoner?samhandlertype=PO
 
 ## Kodeverk
 
