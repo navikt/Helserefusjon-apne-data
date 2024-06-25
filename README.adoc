@@ -105,6 +105,9 @@ URL https://opne-data-api.helserefusjon.no/v1/nlkkoder
 | sistEndretDato |
 | stjernekode |
 | ugyldigKombinasjon |
+| systemSpesifikasjon |
+| egenskapsartSpesifikasjon |
+| gruppering |
 | refusjonskategorisats | Liste av refusjonskategorier, se NLK refusjonskategorier for beskrivelse av feltene.
 |===
 
