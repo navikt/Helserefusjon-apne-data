@@ -125,7 +125,6 @@ URL https://opne-data-api.helserefusjon.no/v1/nlkkoder
 For query på nlkkode %25 brukes for å angi wildcard søk.
 
 ==== Eksempel:
-https://opne-data-api.helserefusjon.no/v1/nlkkoder?gyldigdato=2018-08-09&samhandlertype=PO
 https://opne-data-api.helserefusjon.no/v1/nlkkoder?gyldigdato=2025-06-04&nlkkode=NOR35342
 
 == Refusjonskategorier for NLK, NCRP og patologi
